@@ -16,14 +16,463 @@ html {
   color: #515151;
 }
 
-body {
-  overflow: hidden;
-}
-
 a {
   text-decoration: none;
+  color: white;
 }
 
 p {
   font-size: 1.6rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 122.5rem;
+  margin: 0 auto;
+  padding: 0 7.4rem;
+}
+
+/* Header styling */
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+}
+
+.nav {
+  height: 7.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+  font-size: 1.8rem;
+  margin-top: 2.2rem;
+}
+
+.logo {
+  margin-top: 4.4rem;
+  color: grey;
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background: url("images/home.png") center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 2.4rem;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.home .name {
+  color: rgb(227, 27, 109);
+}
+
+.hero {
+  background: rgb(224, 235, 232);
+}
+.hero-one {
+  height: 65vh;
+  width: 100%;
+}
+
+.small-avatar {
+  text-align: center;
+  padding-top: 4.4rem;
+}
+
+.hi {
+  text-align: center;
+  margin-top: 3.4rem;
+  font-size: 2.2rem;
+  color: rgb(69, 178, 154);
+  font-weight: 100;
+}
+
+.text {
+  margin: 0 auto;
+  text-align: center;
+  width: 40%;
+  margin-top: 3.4rem;
+  letter-spacing: 1.2px;
+  font-weight: 200;
+}
+
+.line {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 3.2rem;
+  letter-spacing: 5px;
+  margin-top: 4.4rem;
+  color: rgb(165, 156, 156);
+  opacity: 0.5;
+}
+.hero-two {
+  height: 80vh;
+}
+
+.first {
+  text-align: center;
+  margin-top: 0.4rem;
+  font-size: 2.2rem;
+  color: rgb(35, 165, 137);
+  font-weight: 400;
+}
+
+.what-you-want,
+.what-you-need {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 60%;
+  margin-top: 5.4rem;
+  letter-spacing: 1.2px;
+}
+
+.right-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 4.4rem;
+}
+
+.top-text {
+  margin-bottom: 2.4rem;
+  font-size: 2.2rem;
+  color: rgb(69, 178, 154);
+}
+
+.left-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-right: 4.4rem;
+}
+
+/* Portfolio */
+
+.portfolio {
+  height: 75vh;
+  background: black;
+}
+
+.work {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 8.4rem;
+}
+
+.some-work {
+  text-align: center;
+  padding-top: 4.4rem;
+  font-size: 3.2rem;
+  color: rgb(69, 178, 154);
+  letter-spacing: 2px;
+}
+
+.some-work-text {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 4.4rem;
+  width: 45%;
+}
+
+.some-work-text p {
+  font-size: 2rem;
+  letter-spacing: 1.2px;
+  color: white;
+}
+
+/* Projects */
+
+.project {
+  height: 140vh;
+}
+
+.apple {
+  background: rgb(125, 204, 147);
+  padding-top: 4.4rem;
+}
+
+.frame {
+  width: 945px;
+  height: 740px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: white;
+  margin: auto;
+  padding: 15px 25px;
+  padding-top: 25px;
+}
+
+.apple-headline {
+  text-align: center;
+  padding-top: 2.4rem;
+  font-size: 3.2rem;
+  letter-spacing: 1.2px;
+  color: whitesmoke;
+}
+
+/* .text-description {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 4.4rem;
+  width: 65%;
+  font-size: 2.2rem;
+  color: white;
+  letter-spacing: 1px;
+} */
+
+.preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.2rem;
+  padding: 1.5rem;
+  cursor: pointer;
+}
+
+.cta {
+  width: 14rem;
+  height: 4.4rem;
+  color: white;
+  background: rgb(43, 61, 81);
+  outline: none;
+  border: 1px solid rgb(43, 61, 81);
+  border-radius: 2.5px;
+  cursor: pointer;
+}
+
+.rosa {
+  background: rgb(247, 97, 96);
+  padding-top: 4.4rem;
+}
+
+.rosa-frame {
+  width: 720px;
+  height: 800px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #eee;
+  margin: auto;
+  padding: 15px 25px;
+  padding-top: 25px;
+}
+
+.budget {
+  background: rgb(49, 53, 91);
+  padding-top: 4.4rem;
+}
+
+.cta-budget {
+  background-color: rgb(66, 153, 237);
+}
+
+.pomodoro {
+  background: url("images/pomodoro-timer.png") center no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.preview-pomodoro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.cta-pomodoro {
+  margin-top: 70rem;
+}
+
+/* Others section */
+
+.others {
+  background: rgb(103, 152, 149);
+}
+
+.box1,
+.box2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.box1 img {
+  padding-left: 2.2rem;
+  height: 350px;
+  padding-top: 4.4rem;
+}
+
+.box2 {
+  padding-top: 4.4rem;
+}
+
+.box2 img {
+  padding-left: 2.2rem;
+  height: 350px;
+  width: 400px;
+  padding-top: 4.4rem;
+}
+
+.project-name {
+  text-align: center;
+  font-size: 2.2rem;
+  padding-top: 1.8rem;
+  color: black;
+}
+
+.cta-name {
+  border-radius: 2.2rem;
+}
+
+/* Tech stack */
+
+.second-container {
+  width: 100%;
+  max-width: 122.5rem;
+  margin: 0 auto;
+  padding: 0 7.4rem;
+}
+
+.tech-stack {
+  background: rgb(224, 235, 232);
+  height: 85vh;
+  padding-top: 8.4rem;
+}
+
+.headline {
+  text-align: center;
+  margin-top: 0.4rem;
+  font-size: 3.2rem;
+  color: rgb(35, 165, 137);
+  font-weight: 400;
+  padding: 6.4rem;
+}
+
+.skills-innerbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4.4rem;
+  font-size: 5.4rem;
+}
+
+.skills-icon {
+  padding-left: 8.4rem;
+}
+
+/* Contact section */
+
+.contact {
+  height: 65vh;
+}
+
+.note-title {
+  text-align: center;
+  padding-top: 8.4rem;
+  color: rgb(69, 178, 154);
+  font-size: 4.2rem;
+  letter-spacing: 1.2px;
+}
+
+.note-subtitle {
+  text-align: center;
+  font-size: 2.2rem;
+  letter-spacing: 1.2px;
+  color: rgb(91, 184, 164);
+  padding-top: 4.4rem;
+}
+
+.note {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1px;
+  padding-top: 4.4rem;
+  width: 50%;
+  line-height: 3.2rem;
+}
+
+.message-me {
+  text-align: center;
+  margin-top: 4.4rem;
+}
+
+.message-btn {
+  height: 4.4rem;
+  width: 16rem;
+  background: rgb(69, 178, 154);
+  border: 1px solid rgb(69, 178, 154);
+  border-radius: 2.5px;
+}
+
+.icon-btn {
+  font-size: 2.2rem;
+  margin-right: 1.2rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(50%);
+}
+
+.icon-btn a {
+  padding-bottom: 1.2rem;
+}
+/* Footer */
+
+.footer {
+  height: 22.5vh;
+  background-color: rgb(224, 235, 232);
+}
+
+.footer a {
+  text-decoration: none;
+  color: rgb(69, 178, 154);
+}
+
+.footer ul {
+  list-style: none;
+  color: rgb(69, 178, 154);
+  padding-top: 5.2rem;
+}
+
+.footer-items {
+  text-align: center;
+  display: flex;
+  margin: 0 auto;
+  width: 40%;
+  justify-content: space-around;
+  margin-top: 2.2rem;
+  font-size: 1.6rem;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 5.2rem;
+  color: rgb(69, 178, 154);
+}
+
+.copy-note {
+  font-size: 1.4rem;
 }
