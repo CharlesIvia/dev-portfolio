@@ -1,59 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Charles | Ivia</title>
 
-    <!--Desciption-->
+<head>
+  <meta charset="UTF-8" />
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Charles | Ivia</title>
 
-    <meta name="author" content="Charles Ivia" />
-    <meta name="description" content="I design & build digital products" />
-    <meta
-      name="keywords"
-      content="charles, ivia, charles ivia,portfolio, developer, web, website, branding, experience, product, freelance, human, interface, search, engine, optimization, SEO"
-    />
-    <meta name="Resource-type" content="Document" />
+  <!--Desciption-->
 
-    <!--Open Graph Data-->
+  <meta name="author" content="Charles Ivia" />
+  <meta name="description" content="I design & build digital products" />
+  <meta name="keywords"
+    content="charles, ivia, charles ivia,portfolio, developer, web, website, branding, experience, product, freelance, human, interface, search, engine, optimization, SEO" />
+  <meta name="Resource-type" content="Document" />
 
-    <meta property="og:site_name" content="Charles Ivia" />
-    <meta property="og:title" content="Charles | Ivia" />
-    <meta
-      property="og:description"
-      content="I design & build digital products."
-    />
-    <meta property="og:image" content="" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="" />
+  <!--Open Graph Data-->
 
-    <!--CSS-->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <nav class="nav">
-          <a href="index.html">
-            <img src="images/face-avatar-two.jpg" alt="logo" />
-          </a>
+  <meta property="og:site_name" content="Charles Ivia" />
+  <meta property="og:title" content="Charles | Ivia" />
+  <meta property="og:description" content="I design & build digital products." />
+  <meta property="og:image" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
 
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Contact</a>
-            </li>
-          </ul>
-          
-        </nav>
+  <!--CSS-->
+  <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html">
+          <img class="logo" src="images/circle-cropped-two.png" alt="logo" />
+        </a>
+
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="home">
+    <div class="container">
+      <h1>Hello, I'm <span class="name">Charles Ivia</span></h1>
+      <h1>I am front-end developer.</h1>
+    </div>
+  </section>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-one">
+        <div class="small-avatar">
+          <img src="images/small-avatar.png" alt="small-avatar" />
+        </div>
+        <div class="hi">
+          <h1>Hi.</h1>
+        </div>
+
+        <div class="text">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus,
+            ullam totam nam illo nisi magnam eum! Eveniet voluptatibus id, nam
+            ab molestiae minus officiis impedit culpa earum inventore soluta
+            animi?
+          </p>
+        </div>
+
+        <div class="line">
+          ........
+        </div>
       </div>
-    </header>
-  </body>
+
+      <div class="hero-two">
+        <div class="first">
+          <h1>What I can do.</h1>
+        </div>
+
+        <div class="what-you-want">
+          <img src="images/small-avatar.png" alt="" />
+          <div class="right-text">
+            <h1 class="top-text">Design what you want.</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque,
+              dolore beatae. Explicabo eum dolore beatae vel non nam modi
+              magni tenetur laborum dignissimos culpa delectus soluta nobis,
+              porro architecto ea?
+            </p>
+          </div>
+        </div>
+
+        <div class="what-you-need">
+          <div class="left-text">
+            <h1 class="top-text">Develop what you need.</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate, earum atque. Ipsum dolores illo repudiandae nobis
+              doloremque? Mollitia, ratione distinctio laudantium delectus
+              illo accusantium assumenda nihil optio porro quia nam!
+            </p>
+          </div>
+
+          <img src="images/black-man-circle-two.png" alt="" />
+        </div>
+
+        <div class="line">
+          ........
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--New section-->
+
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="work">
+        <img src="images/pencil.png" alt="" />
+      </div>
+      <h1 class="some-work">What I've been up to.</h1>
+
+      <div class="some-work-text">
+        <p>
+          Here's a selection of some recent work. For more up to the minute
+          work you can visit me on dribbble or twitter.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!--New sections-->
+
+  <section class="project apple">
+    <div class="container">
+      <div class="apple">
+        <div class="frame">
+          <img class="first-image" src="images/apple-final.PNG" alt="" />
+        </div>
+      </div>
+
+      <h1 class="apple-headline">Apple Website Clone</h1>
+
+      <!-- <p class="text-description">
+          As an exploration in product design and architecture I have been
+          working on an idea for a restaurant reservation system. Thoroughly
+          challenging thinking through the product design but ultimately
+          rewarding.
+        </p> -->
+
+      <div class="preview">
+        <button class="cta">
+          <a href="https://charlesivia.github.io/apple-replica/" target="_blank">LIVE PREVIEW</a>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="project rosa">
+    <div class="container">
+      <div class="rosa">
+        <div class="rosa-frame">
+          <img class="first-image" src="images/rosa-capture.PNG" alt="" />
+        </div>
+      </div>
+
+      <h1 class="apple-headline">Luxurious Hotel</h1>
+
+      <!-- <p class="text-description">
+          As an exploration in product design and architecture I have been
+          working on an idea for a restaurant reservation system. Thoroughly
+          challenging thinking through the product design but ultimately
+          rewarding.
+        </p> -->
+
+      <div class="preview">
+        <button class="cta">
+          <a href="https://charlesivia.github.io/villa-rosa/" target="_blank">LIVE PREVIEW</a>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="project budget">
+    <div class="container">
+      <div class="budget">
+        <div class="budget-frame">
+          <img class="first-image" src="images/budget.PNG" alt="" />
+        </div>
+      </div>
+
+      <h1 class="apple-headline">Weekly Budget Tracker</h1>
+
+      <!-- <p class="text-description">
+          As an exploration in product design and architecture I have been
+          working on an idea for a restaurant reservation system. Thoroughly
+          challenging thinking through the product design but ultimately
+          rewarding.
+        </p> -->
+
+      <div class="preview">
+        <button class="cta cta-budget">
+          <a href="https://charlesivia.github.io/weekly-budget/" target="_blank">LIVE PREVIEW</a>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="pomodoro">
+    <div class="container">
+      <div class="preview-pomodoro">
+        <button class="cta cta-pomodoro">
+          <a href="https://charlesivia.github.io/Pomodoro/" target="_blank">LIVE PREVIEW</a>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="project others">
+    <div class="container">
+      <h1 class="apple-headline">Explore More.</h1>
+      <div class="box1">
+        <div class="banger">
+          <img class="banger" src="images/others/banger-player.PNG" alt="" />
+          <h1 class="project-name">Stream Music</h1>
+
+          <div class="preview">
+            <button class="cta cta-name">
+              <a href="https://charlesivia.github.io/music-player/" target="_blank">LIVE PREVIEW</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="task-list">
+          <img class="task" src="images/others/task-list.PNG" alt="" />
+          <h1 class="project-name">Task List</h1>
+          <div class="preview">
+            <button class="cta cta-name">
+              <a href="https://charlesivia.github.io/task-list/" target="_blank">LIVE PREVIEW</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="tech-quiz">
+          <img class="tech-quiz" src="images/others/tech-quiz.PNG" alt="" />
+          <h1 class="project-name">Tech Quiz</h1>
+          <div class="preview">
+            <button class="cta cta-name">
+              <a href="https://charlesivia.github.io/Tech-Quiz/" target="_blank">LIVE PREVIEW</a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="box2">
+        <div class="quotes">
+          <img src="images/others/cool-quotes.PNG" alt="" />
+          <h1 class="project-name">Random Quotes</h1>
+          <div class="preview">
+            <button class="cta cta-name">
+              <a href="https://charlesivia.github.io/quotes/" target="_blank">LIVE PREVIEW</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="tic-tac-toe">
+          <img src="images/others/tic-tac-toe.PNG" alt="" />
+          <h1 class="project-name">Tic Tac Toe</h1>
+          <div class="preview">
+            <button class="cta cta-name">
+              <a href="https://charlesivia.github.io/tic-tac-toe/" target="_blank">LIVE PREVIEW</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="typing">
+          <img src="images/others/typing.PNG" alt="" />
+          <h1 class="project-name">Type Like a Pro</h1>
+          <div class="preview">
+            <button class="cta cta-name">
+              <a href="https://charlesivia.github.io/typing-game/" target="_blank">LIVE PREVIEW</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="tech-stack">
+    <div class="second-container">
+      <div>
+        <h1 class="headline">I work with this stack.</h1>
+      </div>
+
+      <div class="skills-innerbox">
+        <div class="skills-icon">
+          <a href="https://en.wikipedia.org/wiki/HTML5" title="HTML 5" target="_blank"><i class="fab fa-html5"
+              style="color: #e34f26;"></i></a>
+        </div>
+        <div class="skills-icon">
+          <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" title="CSS 3" target="_blank"><i
+              class="fab fa-css3-alt" style="color: #264de4;"></i></a>
+        </div>
+        <div class="skills-icon">
+          <a href="https://sass-lang.com/" title="Sass" target="_blank"><i class="fab fa-sass"
+              style="color: #cd6799;"></i></a>
+        </div>
+        <div class="skills-icon">
+          <a href="https://git-scm.com/" title="Git" target="_blank"><i class="fab fa-git"
+              style="color: #3e2c00;"></i></a>
+        </div>
+
+        <div class="skills-icon">
+          <a href="https://en.wikipedia.org/wiki/JavaScript" title="JavaScript" target="_blank"><i class="fab fa-js"
+              style="color: #f0db4f;"></i></a>
+        </div>
+        <div class="skills-icon">
+          <a href="https://reactjs.org/" title="React" target="_blank"><i class="fab fa-react"
+              style="color: #61dbfb;"></i></a>
+        </div>
+        <div class="skills-icon">
+          <a href="https://graphql.org/" title="GraphQL" target="_blank"><span class="iconify"
+              data-icon="simple-icons:graphql" data-inline="false" style="color: rgb(227, 26, 142);"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <div>
+        <h1 class="note-title">I can help.</h1>
+      </div>
+
+      <div class="available">
+        <h2 class="note-subtitle">I am currently available for freelance work.</h2>
+      </div>
+
+      <div class="note">
+        <p>
+          If you have a project that you want to get started, think you need my
+          help with something or just fancy saying hey, then get in touch.
+        </p>
+      </div>
+
+      <div class="message-me">
+        <button class="message-btn">
+          <a href="mailto:iviacharles@gmail.com">MESSAGE ME</a>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+
+      <ul class="footer-items">
+        <li>
+          <a href="https://github.com/CharlesIvia/">github</a </li>
+        <li>
+          <a href="">twitter</a>
+        </li>
+
+        <li>
+          <a href="mailto:iviacharles@gmail.com">hire me</a>
+        </li>
+      </ul>
+
+      <div class="copyright">
+        <p class="copy-note">&copy; 2020 <a href="index.html">Charles Ivia. </a>All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
