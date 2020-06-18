@@ -178,6 +178,10 @@ header {
   background-image: none;
 }
 
+.github {
+  color: rgb(54, 163, 140);
+}
+
 .home .name {
   color: rgb(54, 163, 140);
 }
@@ -401,7 +405,7 @@ header {
 /* Projects */
 
 .project {
-  height: 140vh;
+  height: 150vh;
 }
 
 .apple {
@@ -425,10 +429,14 @@ header {
   padding-top: 2.4rem;
   font-size: 3.2rem;
   letter-spacing: 1.2px;
-  color: whitesmoke;
+  color: black;
 }
 
-/* .text-description {
+.budget-headline {
+  padding-top: 10.4rem;
+}
+
+.text-description {
   text-align: center;
   margin: 0 auto;
   margin-top: 4.4rem;
@@ -436,7 +444,17 @@ header {
   font-size: 2.2rem;
   color: white;
   letter-spacing: 1px;
-} */
+}
+
+.apple-description,
+.hotel-description,
+.budget-description {
+  color: black;
+}
+
+.budget-description {
+  padding-top: 4.4rem;
+}
 
 .preview {
   display: flex;
@@ -487,8 +505,12 @@ header {
   background-color: black;
 }
 
+.budget-btn {
+  padding-top: 4.4rem;
+}
+
 .pomodoro {
-  background: url("images/pomodoro-timer.png") center no-repeat;
+  background: url("images/pomodoro.png") center no-repeat;
   background-size: cover;
   height: 100vh;
 }
@@ -502,6 +524,11 @@ header {
 
 .cta-pomodoro {
   margin-top: 85vh;
+}
+
+.conclusion{
+  text-align: center;
+  margin-top: 8.4rem;
 }
 
 /* Others section */
