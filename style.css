@@ -207,8 +207,8 @@ header {
   align-items: center;
   justify-content: center;
   animation: fadeIn;
-  animation-duration: 5s;
-  --animate-repeat: 5;
+  animation-duration: 10s;
+  --animate-repeat: 3;
 }
 
 .dots {
@@ -229,7 +229,32 @@ header {
 
 .asterisk {
   font-size: 4.4rem;
+  color: rgb(163, 162, 236);
   padding: 0;
+  opacity: 0.8;
+  animation: spin 3s infinite linear;
+}
+
+.astk {
+  animation: spins 3s infinite linear;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    opacity: 0.9;
+    transform: rotate(359deg);
+  }
+}
+@keyframes spins {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    opacity: 0.9;
+    transform: rotate(-359deg);
+  }
 }
 
 .aste-frame {
