@@ -1,6 +1,5 @@
 /* Global variables */
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@700&family=Nunito:wght@600&family=Poppins:wght@500&display=swap");
 *,
 ::before,
 ::after {
@@ -12,17 +11,40 @@
 html {
   font-size: 10px;
   scroll-behavior: smooth;
-  font-family: "Lato", sans-serif;
+  font-family: adobe-garamond-pro, serif;
+  font-weight: 400;
+  font-style: normal;
   color: #515151;
 }
 
 a {
   text-decoration: none;
   color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 p {
   font-size: 1.6rem;
+}
+
+/* Scroll bars */
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
 }
 
 .container {
@@ -40,7 +62,7 @@ header {
   top: 0;
   left: 0;
   z-index: 1;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent);
 }
 
 .nav {
@@ -64,10 +86,44 @@ header {
   color: grey;
 }
 
+.nav-item a {
+  position: relative;
+  font-size: 2.2rem;
+}
+.nav-item a,
+.nav-item a::after,
+.nav-item a::before {
+  transition: all 0.4s;
+}
+
+.nav-item a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; /* start from center */
+  width: 0%;
+  background: rgb(227, 27, 109);
+  height: 2px;
+}
+
+.nav-item a:hover::after {
+  width: 100%;
+}
+
+.nav-item-home a:hover {
+  color: rgb(54, 163, 140);
+}
+
+.nav-item a :visited {
+  color: rgb(54, 163, 140);
+}
+
 .home {
   width: 100%;
   height: 100vh;
-  background: url("images/home.png") center no-repeat;
+  background: url("images/circuit.jpg") center no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -75,14 +131,60 @@ header {
   font-size: 2.4rem;
   color: white;
   letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.home-portfolio {
+  /* background: url("images/bg-masthead.jpg") center no-repeat;
+  background-size: cover; */
+  background: rgb(255, 255, 0);
+}
+
+.portfolio-headline {
+  color: black;
+  font-size: 11.3rem;
+  font-family: adobe-garamond-pro, serif;
+  font-weight: 550;
+  font-style: bold;
+}
+
+.my-name {
+  padding-top: 3.2rem;
+  font-size: 3.3rem;
+  color: black;
+  font-family: adobe-garamond-pro, serif;
+  font-weight: 550;
+  font-style: bold;
+}
+
+.portfolio-link {
+  color: black;
+  font-size: 2.3rem;
+  font-family: adobe-garamond-pro, serif;
+  font-weight: 400;
+  font-style: bold;
+  transition: 0.5s all ease;
+}
+
+.portfolio-link:hover {
+  color: black;
+  font-size: 3.3rem;
+  font-family: adobe-garamond-pro, serif;
+  font-weight: 550;
+  font-style: bold;
+}
+
+.portfolio-header {
+  background-image: none;
 }
 
 .home .name {
-  color: rgb(227, 27, 109);
+  color: rgb(54, 163, 140);
 }
 
 .hero {
-  background: rgb(224, 235, 232);
+  background: white;
+  height: 170vh;
 }
 .hero-one {
   height: 65vh;
@@ -91,24 +193,89 @@ header {
 
 .small-avatar {
   text-align: center;
-  padding-top: 4.4rem;
+  padding-top: 6.4rem;
 }
 
+.small-round-avatar {
+  padding-top: 6.2rem;
+}
+
+.whiteboard {
+  font-size: 5.2rem;
+  color: rgb(124, 78, 37);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn;
+  animation-duration: 5s;
+  --animate-repeat: 5;
+}
+
+.dots {
+  margin-top: 5.2rem;
+  font-size: 2.2rem;
+  color: rgb(233, 227, 227);
+}
+
+.icon-frame {
+  margin-top: 6.2rem;
+  padding: 2.6rem;
+  margin-left: 0.2rem;
+  background: rgb(238, 239, 240);
+  border-radius: 50%;
+  width: 10.2rem;
+  height: 10.2rem;
+}
+
+.asterisk {
+  font-size: 4.4rem;
+  padding: 0;
+}
+
+.aste-frame {
+  padding-top: 2.2rem;
+}
+
+.asterisk-two {
+  padding-top: 2.2rem;
+}
+
+.aste-dots {
+  margin-top: 1.2rem;
+  font-size: 2.2rem;
+  color: rgb(233, 227, 227);
+}
 .hi {
   text-align: center;
   margin-top: 3.4rem;
-  font-size: 2.2rem;
-  color: rgb(69, 178, 154);
+  font-size: 3.2rem;
+  color: black;
   font-weight: 100;
 }
 
 .text {
   margin: 0 auto;
   text-align: center;
-  width: 40%;
+  width: 70%;
   margin-top: 3.4rem;
-  letter-spacing: 1.2px;
+  letter-spacing: 0px;
+  line-height: 3.2rem;
   font-weight: 200;
+}
+
+.soul {
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: black;
+  letter-spacing: 0.2;
+  line-height: 140%;
+  padding-top: 2.4rem;
+}
+
+.soul-two {
+  line-height: 120%;
+  letter-spacing: 0.1px;
+  font-size: 2.5rem;
 }
 
 .line {
@@ -118,7 +285,7 @@ header {
   letter-spacing: 5px;
   margin-top: 4.4rem;
   color: rgb(165, 156, 156);
-  opacity: 0.5;
+  opacity: 0.2;
 }
 .hero-two {
   height: 80vh;
@@ -126,10 +293,14 @@ header {
 
 .first {
   text-align: center;
-  margin-top: 0.4rem;
-  font-size: 2.2rem;
-  color: rgb(35, 165, 137);
+  padding-top: 4.4rem;
+  font-size: 3.2rem;
+  color: black;
   font-weight: 400;
+}
+
+.what-i-can-do {
+  padding-top: 4.4rem;
 }
 
 .what-you-want,
@@ -139,7 +310,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 60%;
+  width: 85%;
   margin-top: 5.4rem;
   letter-spacing: 1.2px;
 }
@@ -153,8 +324,9 @@ header {
 
 .top-text {
   margin-bottom: 2.4rem;
-  font-size: 2.2rem;
-  color: rgb(69, 178, 154);
+  font-size: 3.2rem;
+  color: rgb(31, 29, 29);
+  font-weight: 550;
 }
 
 .left-text {
@@ -167,7 +339,7 @@ header {
 /* Portfolio */
 
 .portfolio {
-  height: 75vh;
+  height: 90vh;
   background: black;
 }
 
@@ -196,7 +368,8 @@ header {
 
 .some-work-text p {
   font-size: 2rem;
-  letter-spacing: 1.2px;
+  letter-spacing: 1px;
+  line-height: 3.2rem;
   color: white;
 }
 
@@ -207,16 +380,16 @@ header {
 }
 
 .apple {
-  background: rgb(125, 204, 147);
+  background: rgb(4, 247, 153);
   padding-top: 4.4rem;
 }
 
 .frame {
   width: 945px;
   height: 740px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(17, 17, 17);
   border-radius: 10px;
-  background: white;
+  background: rgb(17, 17, 17);
   margin: auto;
   padding: 15px 25px;
   padding-top: 25px;
@@ -253,9 +426,9 @@ header {
   width: 14rem;
   height: 4.4rem;
   color: white;
-  background: rgb(43, 61, 81);
+  background: black;
   outline: none;
-  border: 1px solid rgb(43, 61, 81);
+  border: 1px solid black;
   border-radius: 2.5px;
   cursor: pointer;
 }
@@ -268,9 +441,9 @@ header {
 .rosa-frame {
   width: 720px;
   height: 800px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(30, 47, 70);
   border-radius: 10px;
-  background: #eee;
+  background: rgb(30, 47, 70);
   margin: auto;
   padding: 15px 25px;
   padding-top: 25px;
@@ -281,8 +454,12 @@ header {
   padding-top: 4.4rem;
 }
 
+.first-image {
+  border-radius: 2.5px;
+}
+
 .cta-budget {
-  background-color: rgb(66, 153, 237);
+  background-color: black;
 }
 
 .pomodoro {
@@ -299,13 +476,14 @@ header {
 }
 
 .cta-pomodoro {
-  margin-top: 70rem;
+  margin-top: 85vh;
 }
 
 /* Others section */
 
 .others {
   background: rgb(103, 152, 149);
+  height: 160vh;
 }
 
 .box1,
@@ -341,10 +519,6 @@ header {
   color: black;
 }
 
-.cta-name {
-  border-radius: 2.2rem;
-}
-
 /* Tech stack */
 
 .second-container {
@@ -355,9 +529,13 @@ header {
 }
 
 .tech-stack {
-  background: rgb(224, 235, 232);
+  background: black;
   height: 85vh;
   padding-top: 8.4rem;
+}
+
+.portfolio-stack {
+  background: black;
 }
 
 .headline {
@@ -379,6 +557,11 @@ header {
 
 .skills-icon {
   padding-left: 8.4rem;
+  transition: 0.4s ease;
+}
+
+.skills-icon:hover {
+  transform: scale(1.2);
 }
 
 /* Contact section */
@@ -390,7 +573,7 @@ header {
 .note-title {
   text-align: center;
   padding-top: 8.4rem;
-  color: rgb(69, 178, 154);
+  color: black;
   font-size: 4.2rem;
   letter-spacing: 1.2px;
 }
@@ -399,7 +582,7 @@ header {
   text-align: center;
   font-size: 2.2rem;
   letter-spacing: 1.2px;
-  color: rgb(91, 184, 164);
+  color: black;
   padding-top: 4.4rem;
 }
 
@@ -423,17 +606,9 @@ header {
 .message-btn {
   height: 4.4rem;
   width: 16rem;
-  background: rgb(69, 178, 154);
-  border: 1px solid rgb(69, 178, 154);
+  background: black;
+  border: 1px solid black;
   border-radius: 2.5px;
-}
-
-.icon-btn {
-  font-size: 2.2rem;
-  margin-right: 1.2rem;
-  position: relative;
-  top: 50%;
-  transform: translateY(50%);
 }
 
 .icon-btn a {
@@ -443,7 +618,11 @@ header {
 
 .footer {
   height: 22.5vh;
-  background-color: rgb(224, 235, 232);
+  background-color: black;
+}
+
+.portfolio-footer {
+  background: black;
 }
 
 .footer a {
