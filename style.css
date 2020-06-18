@@ -673,6 +673,32 @@ header {
 .icon-btn a {
   padding-bottom: 1.2rem;
 }
+
+/* Back to top */
+
+.go-home {
+  text-align: center;
+}
+
+.chev {
+  font-size: 4.2rem;
+  color: black;
+  animation: up 2s infinite;
+}
+
+@keyframes up {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+}
+
 /* Footer */
 
 .footer {
