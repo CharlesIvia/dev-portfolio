@@ -13,7 +13,8 @@
     <meta name="description" content="I design & build digital products" />
     <meta
       name="keywords"
-      content="charles, ivia, charles ivia,portfolio, developer, web, website, branding, experience, product, freelance, human, interface, search, engine, optimization, SEO"
+      content="charles, ivia, charles ivia,portfolio, developer, web, website, branding, 
+      experience, product, freelance, human, interface, search, engine, optimization, SEO"
     />
     <meta name="Resource-type" content="Document" />
 
@@ -30,6 +31,7 @@
     <meta property="og:url" content="" />
 
     <!--CSS-->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
     <link
       rel="stylesheet"
@@ -51,7 +53,16 @@
             <img class="logo" src="images/circle-cropped-two.png" alt="logo" />
           </a>
 
-          <ul class="nav-list">
+          <ul class="nav-list nav-list-mobile">
+            <li class="nav-item">
+              <div class="mobile-menu">
+                <span class="lined line-top"></span>
+                <span class="lined line-bottom"></span>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="nav-list nav-list-larger">
             <li class="nav-item nav-item-home">
               <a href="#about" class="nav-link">About</a>
             </li>
@@ -68,7 +79,7 @@
 
     <section id="home" class="home">
       <div class="container">
-        <div>
+        <div class="home-words">
           <h1 class="animate__animated animate__fadeInUp">
             Hello, I'm <span class="name">Charles Ivia.</span>
           </h1>
@@ -109,18 +120,26 @@
           </div>
 
           <div class="what-you-want">
-            <img
-              class="small-round-avatar"
-              src="images/small-avatar.png"
-              alt=""
-            />
-            <p class="dots">................</p>
-            <div class="icon-frame">
-              <span
-                class="iconify whiteboard animate__animated animate__fadeIn animate__repeat-3"
-                data-icon="vs:whiteboard"
-                data-inline="false"
-              ></span>
+            <div class="first-animation">
+              <img
+                class="small-round-avatar"
+                src="images/small-avatar.png"
+                alt=""
+              />
+
+              <img
+                class="menu-avatar"
+                src="images/circle-cropped-menu.png"
+                alt=""
+              />
+              <p class="dots">...................</p>
+              <div class="icon-frame">
+                <span
+                  class="iconify whiteboard animate__animated animate__fadeIn animate__repeat-3"
+                  data-icon="vs:whiteboard"
+                  data-inline="false"
+                ></span>
+              </div>
             </div>
 
             <div class="right-text">
@@ -167,6 +186,42 @@
             <p class="aste-dots">....................</p>
 
             <img src="images/black-man-circle-two.png" alt="" />
+          </div>
+
+          <div class="what-you-need what-you-need-menu">
+            <div class="aste-frame">
+              <span
+                class="iconify asterisk"
+                data-icon="clarity:cog-line"
+                data-inline="false"
+              ></span>
+              <span
+                class="iconify asterisk"
+                data-icon="clarity:cog-line"
+                data-inline="false"
+              ></span>
+            </div>
+
+            <div class="asterisk-two">
+              <span
+                class="iconify asterisk astk"
+                data-icon="clarity:cog-line"
+                data-inline="false"
+              ></span>
+            </div>
+
+            <p class="aste-dots">....................</p>
+
+            <img src="images/black-man-circle-two.png" alt="" />
+          </div>
+
+          <div class="left-text">
+            <h1 class="top-text menu-top-text">Develop what you need.</h1>
+            <p class="soul soul-two soul-two-menu">
+              I don't just write code. I create artistic, responsive and modular
+              web applications. My abundant energy fuels me in the pursuit of
+              the very best.
+            </p>
           </div>
 
           <div class="line">
@@ -300,4 +355,6 @@
       </div>
     </footer>
   </body>
+
+  <script src="script.js"></script>
 </html>
