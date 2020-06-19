@@ -14,3 +14,10 @@ sr.reveal(".project-title-two", {
   distance: "25rem",
   delay: 400,
 });
+
+const mobileMenu = document.querySelector(".mobile-menu");
+let header = document.querySelector("header");
+
+mobileMenu.addEventListener("click", () => {
+  header.classList.toggle("active");
+});
