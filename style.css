@@ -178,7 +178,7 @@ header {
   font-style: bold;
 }
 
-.portfolio-header {
+.p-header {
   background-image: none;
 }
 
@@ -448,6 +448,7 @@ header {
 .hotel-description,
 .budget-description {
   color: black;
+  letter-spacing: 0.1;
 }
 
 .budget-description {
@@ -765,9 +766,19 @@ header {
   display: none;
 }
 
+.apple-small,
+.rosa-small,
+.budget-small,
+.small-banger-div {
+  display: none;
+}
+
 /* Mobile responsiveness  */
 
 @media screen and (max-width: 768px) {
+  html {
+    scroll-behavior: smooth;
+  }
   header {
     height: 4.8rem;
     transition: background 0.36s cubic-bezier(0.32, 0.08, 0.24, 1),
@@ -796,7 +807,8 @@ header {
   .home {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)),  url("/images/header-bg.png")  center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+      url("/images/header-bg.png") center no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -833,6 +845,10 @@ header {
     background-color: white;
     transition: margin-top 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96);
   }
+
+  .lined-port {
+    background: black;
+  }
   .line-bottom {
     margin-top: -0.4rem;
   }
@@ -851,6 +867,10 @@ header {
   header.active {
     height: 100%;
     background-color: black;
+  }
+
+  .p-header.active {
+    background-color: rgb(255, 255, 0);
   }
 
   .nav-list-larger {
@@ -1027,5 +1047,70 @@ header {
 
   .top-text {
     margin: 2.4rem 0 0 0;
+  }
+
+  /* Portfolio page responsiveness  */
+
+  .home-portfolio {
+    background: rgb(255, 255, 0);
+  }
+
+  .portfolio-headline {
+    font-size: 3.2rem;
+  }
+
+  .some-work-text {
+    width: 70%;
+  }
+
+  .others {
+    height: 200vh;
+  }
+
+  .first-image,
+  .frame,
+  .rosa-frame,
+  .budget-frame {
+    display: none;
+  }
+
+  .apple-small,
+  .rosa-small,
+  .budget-small,
+  .small-banger {
+    display: flex;
+    border-radius: 2.2px;
+  }
+
+  .apple-small-div,
+  .rosa-small-div,
+  .budget-small-div,
+  .small-banger-div {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .small-banger-div {
+    flex-direction: column;
+    padding-top: 3.2rem;
+  }
+
+  .text-description {
+    width: 85%;
+  }
+
+  .budget-headline {
+    padding-top: 4.4rem;
+  }
+  .budget-description {
+    margin-top: 1.2rem;
+  }
+
+  .box1,
+  .box2 {
+    display: none;
   }
 }
