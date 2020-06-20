@@ -151,20 +151,17 @@ header {
   font-weight: 550;
   font-style: bold;
 }
-
 .arrow-down {
-  padding-top: 10.4rem;
-  height: 10rem;
+  margin-top: 10.4rem;
   color: black;
   animation: down 2s infinite;
+  outline: none;
 }
 .arrow-down-two {
-  padding-top: 10.4rem;
-  height: 10rem;
+  margin-top: 10.4rem;
   color: white;
   animation: down 2s infinite;
 }
-
 .my-name {
   padding-top: 3.2rem;
   font-size: 3.3rem;
