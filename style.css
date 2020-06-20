@@ -779,6 +779,26 @@ header {
   html {
     scroll-behavior: smooth;
   }
+
+  /* Scroll bars */
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+    border-radius: none;
+    background-color: none;
+  }
+
+  ::-webkit-scrollbar {
+    width: none;
+    background-color: none;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: none;
+    -webkit-box-shadow: none;
+    background-color: none;
+  }
+
   header {
     height: 4.8rem;
     transition: background 0.36s cubic-bezier(0.32, 0.08, 0.24, 1),
