@@ -902,7 +902,7 @@ header {
   }
 
   .hero {
-    height: 200vh;
+    height: 150rem;
   }
 
   .container,
@@ -1049,6 +1049,10 @@ header {
     margin: 2.4rem 0 0 0;
   }
 
+  .contact {
+    height: 50rem;
+  }
+
   /* Portfolio page responsiveness  */
 
   .home-portfolio {
@@ -1063,8 +1067,16 @@ header {
     width: 70%;
   }
 
+  .project {
+    height: 110rem;
+  }
+
+  .portfolio {
+    height: 75rem;
+  }
+
   .others {
-    height: 200vh;
+    height: 150rem;
   }
 
   .first-image,
