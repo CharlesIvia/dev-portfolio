@@ -152,6 +152,19 @@ header {
   font-style: bold;
 }
 
+.arrow-down {
+  padding-top: 10.4rem;
+  height: 10rem;
+  color: black;
+  animation: down 2s infinite;
+}
+.arrow-down-two {
+  padding-top: 10.4rem;
+  height: 10rem;
+  color: white;
+  animation: down 2s infinite;
+}
+
 .my-name {
   padding-top: 3.2rem;
   font-size: 3.3rem;
@@ -695,6 +708,18 @@ header {
   100% {
     opacity: 0;
     transform: translateY(-1rem);
+  }
+}
+@keyframes down {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(1rem);
   }
 }
 
