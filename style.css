@@ -902,7 +902,15 @@ header {
   }
 
   .hero {
-    height: 150rem;
+    height: 160rem;
+  }
+
+  .hero-one {
+    height: 50rem;
+  }
+
+  .hero-two {
+    padding-top: 4.4rem;
   }
 
   .container,
@@ -989,7 +997,7 @@ header {
   }
 
   .what-i-can-do {
-    padding-top: 0;
+    padding-top: 2.2rem;
   }
 
   .menu-top-text {
