@@ -1061,4 +1061,8 @@ header {
   .home-portfolio {
     background: #ff0;
   }
+
+  .hero {
+    height: 170rem;
+  }
 }
