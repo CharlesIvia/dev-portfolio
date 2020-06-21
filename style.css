@@ -671,60 +671,6 @@ header {
 .small-banger-div {
   display: none;
 }
-
-.wrapper {
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.wrapper .item {
-  visibility: hidden;
-  display: none;
-}
-.wrapper h2 {
-  font-size: 6.4rem;
-  margin: 0;
-  padding-top: 5.2rem;
-  color: #3a3a3a;
-  text-align: left;
-}
-.wrapper > div {
-  min-height: 20px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  display: flex;
-  align-items: flex-end;
-  font-weight: bold;
-  color: orange;
-}
-.wrapper > div:after {
-  content: "";
-  width: 10px;
-  height: 4px;
-  display: block;
-  background: black;
-  color: orange;
-  text-align: left;
-  margin-bottom: 10px;
-  /* margin-left: 2px; */
-  animation-duration: 350ms;
-  animation-name: fade;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-}
-
-@keyframes fade {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
 @media screen and (max-width: 768px) {
   html {
     scroll-behavior: smooth;
@@ -798,7 +744,7 @@ header {
     position: absolute;
     width: 1.7rem;
     height: 1px;
-    background-color: rgb(80, 76, 76);
+    background-color:rgb(80, 76, 76);
     transition: margin-top 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96);
   }
   .lined-port {
@@ -932,8 +878,8 @@ header {
     margin-right: 0;
   }
   .what-i-can-do {
-    padding-top: 4rem;
-    font-size: 5.8rem;
+    padding-top: 4.2rem;
+    font-size: 5.3rem;
   }
   .menu-top-text {
     display: flex;
@@ -1047,6 +993,60 @@ header {
   }
 }
 
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.wrapper .item {
+  visibility: hidden;
+  display: none;
+}
+.wrapper h2 {
+  font-size: 6.4rem;
+  margin: 0;
+  padding-top: 5.2rem;
+  color: #3a3a3a;
+  text-align: left;
+}
+.wrapper > div {
+  min-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: flex-end;
+  font-weight: bold;
+  color: orange;
+}
+.wrapper > div:after {
+  content: "";
+  width: 10px;
+  height: 4px;
+  display: block;
+  background: black;
+  color: orange;
+  text-align: left;
+  margin-bottom: 10px;
+  /* margin-left: 2px; */
+  animation-duration: 350ms;
+  animation-name: fade;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .wrapper h2 {
     text-align: center;
@@ -1063,7 +1063,4 @@ header {
     background: #ff0;
   }
 
-  .hero {
-    height: 170rem;
-  }
 }
