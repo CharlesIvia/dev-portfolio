@@ -527,7 +527,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 4.4rem;
+  padding-top: 0.4rem;
   font-size: 5.4rem;
 }
 .skills-icon {
@@ -917,7 +917,7 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding-top: 4.4rem;
+    padding-top: 0.4rem;
     font-size: 5.4rem;
   }
   .skills-icon {
@@ -928,6 +928,10 @@ header {
   }
   .skills-icon:nth-child(5) {
     padding: 2.2rem;
+  }
+
+  .skills-icon:last-child {
+    padding: 1.2;
   }
   .note {
     padding: 0;
