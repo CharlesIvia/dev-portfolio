@@ -14,6 +14,7 @@ html {
   font-style: normal;
   color: #515151;
 }
+
 a {
   text-decoration: none;
   color: rgb(230, 225, 225);
@@ -565,6 +566,11 @@ header {
   width: 50%;
   line-height: 3.2rem;
 }
+
+.note p {
+  font-size: 2.2rem;
+}
+
 .message-me {
   text-align: center;
   margin-top: 4.4rem;
@@ -595,6 +601,7 @@ header {
   color: #000;
   animation: up 2s infinite;
 }
+/* Mobile responsive styling */
 @keyframes up {
   0% {
     opacity: 0;
@@ -1025,6 +1032,7 @@ header {
   visibility: hidden;
   display: none;
 }
+
 .wrapper h2 {
   font-size: 6.4rem;
   margin: 0;
