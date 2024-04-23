@@ -1,5 +1,7 @@
 /* Variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
 
+@import url("https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100..900&display=swap");
+
 :root {
   --black: #171321;
   --dkblue: #0d314b;
@@ -10,7 +12,7 @@
   --white: #f7f8fa;
   --font-size: 1.3rem;
   --mono: "Oxygen mono", monospace;
-  --sans: Oxygen, sans-serif;
+  --sans: "Inter", sans-serif;
 }
 
 /* border box model: https://css-tricks.com/box-sizing/ */
@@ -67,11 +69,7 @@ img {
 }
 
 .gradient {
-  background: linear-gradient(
-    90deg,
-    rgba(255, 23, 228, 1) 0%,
-    rgba(134, 251, 251, 1) 100%
-  );
+  background: linear-gradient(90deg, rgba(255, 23, 228, 1) 0%, rgba(134, 251, 251, 1) 100%);
   height: 2px;
 }
 
@@ -84,9 +82,10 @@ img {
   margin: 0 auto;
 }
 
-#intro p {
-  font-size: 1rem;
-  line-height: 1.5;
+#intro p,
+#contact p {
+  font-size: 1.2rem;
+  line-height: 1.8;
 }
 
 #intro .name {
@@ -209,7 +208,7 @@ nav [class*="fa-"]:hover {
   color: white;
   background-color: var(--black);
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.8;
 }
 
 #projects ul {
