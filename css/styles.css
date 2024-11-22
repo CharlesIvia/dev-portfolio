@@ -178,8 +178,8 @@ nav h1 a {
 
 /* Projects Section */
 .section-blue {
-  background-color: var(--navy);
-  padding: var(--space-xl) 0;
+  /* background-color: var(--navy);
+  padding: var(--space-xl) 0; */
 }
 
 #projects {
@@ -443,6 +443,6 @@ footer p {
 
 /* Utility Classes */
 .gradient {
-  height: 2px;
-  background: linear-gradient(to right, var(--primary), var(--secondary));
+  /* height: 2px;
+  background: linear-gradient(to right, var(--primary), var(--secondary)); */
 }
