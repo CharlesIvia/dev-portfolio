@@ -6,38 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Oxygen+Mono&display=swap" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
-
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Charles Ivia Portfolio</title>
+    <title>About - Charles Ivia</title>
   </head>
 
   <body>
+    <!-- Navigation -->
     <nav>
       <ul>
         <li>
           <h1>
-            <a href="index.html"><span class="fas fa-code" aria-hidden="true"></span> Charles Ivia</a>
+            <a href="index.html">
+              <span class="fas fa-code" aria-hidden="true"></span>
+              Charles Ivia
+            </a>
           </h1>
         </li>
-        <li><a href="index.html#projects">Projects</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
-        <li>
-          <a href="https://ke.linkedin.com/in/charles-ivia-6a2828134" target="_blank">
-            <span class="fab fa-linkedin" aria-hidden="true"></span>
-            <span class="sr-only">LinkedIn</span>
-          </a>
-        </li>
-        <li>
+        <li class="nav-links">
+          <a href="index.html#projects">Work</a>
+          <a href="about.html">About</a>
+          <a href="index.html#contact">Contact</a>
           <a href="https://github.com/CharlesIvia" target="_blank">
-            <span class="fab fa-github-square" aria-hidden="true"></span>
-            <span class="sr-only">Github</span>
+            <span class="fab fa-github"></span>
           </a>
-        </li>
-        <li>
           <a
             href="https://docs.google.com/document/d/1TGQp9KZpNaHv7xi7MsGytKvQFm4WWuO43XkEweowXks/edit?usp=sharing"
             target="_blank"
@@ -45,13 +42,36 @@
             >Resume</a
           >
         </li>
+        <li class="menu-button">
+          <span class="fas fa-bars"></span>
+        </li>
       </ul>
     </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <ul>
+        <li><a href="index.html#projects">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="https://github.com/CharlesIvia" target="_blank">Github</a></li>
+        <li>
+          <a
+            href="https://docs.google.com/document/d/1TGQp9KZpNaHv7xi7MsGytKvQFm4WWuO43XkEweowXks/edit?usp=sharing"
+            target="_blank"
+            >Resume</a
+          >
+        </li>
+      </ul>
+    </div>
+
     <div class="gradient"></div>
+
+    <!-- About Section -->
     <div class="section-blue">
       <section id="projects">
         <h2>About Charles Ivia</h2>
-        <article>
+        <article class="about-article">
           <div class="text">
             <h3>Just the highlights</h3>
             <p class="blackbox">
@@ -64,21 +84,26 @@
             </p>
             <h4>My favorite technologies include:</h4>
             <ul>
-              <li>HTML</li>
-              <li>CSS</li>
               <li>JavaScript</li>
               <li>React JS</li>
+              <li>Node JS</li>
+              <li>Next JS</li>
+              <li>HTML</li>
+              <li>CSS</li>
               <li>Datadog</li>
               <li>Intercom</li>
             </ul>
           </div>
-          <img src="./img/charles.JPG" alt="Charles Ivia" />
+          <img src="./img/charles.JPG" alt="Charles Ivia" class="about-image" />
         </article>
       </section>
     </div>
+
     <div class="gradient"></div>
+
+    <!-- Footer -->
     <footer>
-      <h2>Charles Ivia &middot; Software Craftsman</h2>
+      <h2>Charles Ivia &middot; Software Developer</h2>
       <ul>
         <li>
           <a href="https://ke.linkedin.com/in/charles-ivia-6a2828134" target="_blank">
@@ -88,18 +113,44 @@
         </li>
         <li>
           <a href="https://github.com/CharlesIvia" target="_blank">
-            <span class="fab fa-github-square" aria-hidden="true"></span>
+            <span class="fab fa-github" aria-hidden="true"></span>
             <span class="sr-only">Github</span>
           </a>
         </li>
         <li>
-          <a href="mailto:jen@example.com">
+          <a href="mailto:iviacharles@gmail.com">
             <span class="fas fa-envelope" aria-hidden="true"></span>
             <span class="sr-only">Email</span>
           </a>
         </li>
       </ul>
-      <p><small>&copy; 2022 Charles Ivia. All rights reserved.</small></p>
+      <p><small>&copy; 2024 Charles Ivia. All rights reserved.</small></p>
     </footer>
+
+    <!-- Scripts -->
+    <script>
+      // Mobile menu functionality
+      const menuButton = document.querySelector(".menu-button");
+      const mobileMenu = document.querySelector(".mobile-menu");
+
+      menuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("active");
+      });
+
+      // Close mobile menu when clicking a link
+      const mobileLinks = document.querySelectorAll(".mobile-menu a");
+      mobileLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.remove("active");
+        });
+      });
+
+      // Close mobile menu when clicking outside
+      document.addEventListener("click", (e) => {
+        if (!mobileMenu.contains(e.target) && !menuButton.contains(e.target)) {
+          mobileMenu.classList.remove("active");
+        }
+      });
+    </script>
   </body>
 </html>
